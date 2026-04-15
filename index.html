@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Planner ENEM - Bianca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <!-- Título principal -->
+    <h1>📚 Planner de Estudos</h1>
+    <p class="subtitulo">Organize sua rotina para o ENEM</p>
+
+    <!-- Formulário de tarefas -->
+    <section class="form">
+
+        <!-- Campo de texto -->
+        <label for="tarefa">Nova tarefa</label>
+        <input type="text" id="tarefa" placeholder="Ex: Estudar Matemática">
+
+        <!-- Seleção de prioridade -->
+        <label for="prioridade">Prioridade</label>
+        <select id="prioridade">
+            <option>Alta</option>
+            <option>Média</option>
+            <option>Baixa</option>
+        </select>
+
+        <!-- Botão (visual, sem JS) -->
+        <button>Adicionar tarefa</button>
+
+    </section>
+
+    <!-- Lista de tarefas -->
+    <section>
+        <h2>Minhas tarefas</h2>
+
+        <ul class="lista">
+
+            <!-- Tarefa alta prioridade -->
+            <li class="tarefa alta">
+                <input type="checkbox" id="t1">
+                <label for="t1">Estudar Matemática (funções)</label>
+            </li>
+
+            <!-- Tarefa média prioridade -->
+            <li class="tarefa media">
+                <input type="checkbox" id="t2">
+                <label for="t2">Revisar História</label>
+            </li>
+
+            <!-- Tarefa baixa prioridade -->
+            <li class="tarefa baixa">
+                <input type="checkbox" id="t3">
+                <label for="t3">Assistir aula de redação</label>
+            </li>
+
+        </ul>
+    </section>
+
+</main>
+
+</body>
+</html>

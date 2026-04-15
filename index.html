@@ -1,64 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Planner ENEM - Bianca</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Lista de Tarefas ENEM</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <main class="container">
 
-    <!-- Título principal -->
-    <h1>📚 Planner de Estudos</h1>
-    <p class="subtitulo">Organize sua rotina para o ENEM</p>
+<h1>📚 Lista de Tarefas ENEM</h1>
+<p class="subtitulo">Seu futuro começa com organização 💡</p>
 
-    <!-- Formulário de tarefas -->
-    <section class="form">
+<!-- 🔔 Avisos -->
+<section class="notificacoes">
+    <h2>🔔 Avisos</h2>
+    <div class="card">🔥 Continue! Você já estudou hoje!</div>
+    <div class="card">📌 Dica: Foque nas matérias com maior dificuldade</div>
+</section>
 
-        <!-- Campo de texto -->
-        <label for="tarefa">Nova tarefa</label>
-        <input type="text" id="tarefa" placeholder="Ex: Estudar Matemática">
+<!-- 📝 Adicionar tarefa (simulado) -->
+<section class="form">
+    <h2>➕ Nova tarefa</h2>
 
-        <!-- Seleção de prioridade -->
-        <label for="prioridade">Prioridade</label>
-        <select id="prioridade">
-            <option>Alta</option>
-            <option>Média</option>
-            <option>Baixa</option>
-        </select>
+    <input type="text" placeholder="Digite sua tarefa">
 
-        <!-- Botão (visual, sem JS) -->
-        <button>Adicionar tarefa</button>
+    <select>
+        <option>Linguagens</option>
+        <option>Humanas</option>
+        <option>Natureza</option>
+        <option>Matemática</option>
+        <option>Redação</option>
+    </select>
 
-    </section>
+    <select>
+        <option>Alta</option>
+        <option>Média</option>
+        <option>Baixa</option>
+    </select>
 
-    <!-- Lista de tarefas -->
-    <section>
-        <h2>Minhas tarefas</h2>
+    <label><input type="checkbox"> Adicionar tarefa</label>
+    <p class="msg">✔ Tarefa adicionada com sucesso!</p>
+</section>
 
-        <ul class="lista">
+<!-- 📚 Matérias -->
+<section class="materias">
+<h2>📖 Conteúdos do ENEM</h2>
 
-            <!-- Tarefa alta prioridade -->
-            <li class="tarefa alta">
-                <input type="checkbox" id="t1">
-                <label for="t1">Estudar Matemática (funções)</label>
-            </li>
+<div class="bloco">
+<h3>📝 Linguagens</h3>
+<p>Interpretação de textos, Literatura, Artes e Língua Estrangeira</p>
+</div>
 
-            <!-- Tarefa média prioridade -->
-            <li class="tarefa media">
-                <input type="checkbox" id="t2">
-                <label for="t2">Revisar História</label>
-            </li>
+<div class="bloco">
+<h3>🌎 Humanas</h3>
+<p>História, Geografia, Filosofia e Sociologia</p>
+</div>
 
-            <!-- Tarefa baixa prioridade -->
-            <li class="tarefa baixa">
-                <input type="checkbox" id="t3">
-                <label for="t3">Assistir aula de redação</label>
-            </li>
+<div class="bloco">
+<h3>🔬 Natureza</h3>
+<p>Biologia, Química e Física</p>
+</div>
 
-        </ul>
-    </section>
+<div class="bloco">
+<h3>📊 Matemática</h3>
+<p>Funções, Estatística, Geometria e Porcentagem</p>
+</div>
+
+<div class="bloco">
+<h3>✍ Redação</h3>
+<p>Texto dissertativo-argumentativo</p>
+</div>
+
+</section>
+
+<!-- 📌 Lista -->
+<section>
+<h2>📌 Tarefas</h2>
+
+<ul class="lista">
+
+<li class="tarefa alta">
+<input type="checkbox" id="t1">
+<label for="t1">Função do 2º grau</label>
+</li>
+
+<li class="tarefa media">
+<input type="checkbox" id="t2">
+<label for="t2">Revolução Industrial</label>
+</li>
+
+<li class="tarefa baixa">
+<input type="checkbox" id="t3">
+<label for="t3">Ecologia</label>
+</li>
+
+</ul>
+</section>
+
+<!-- ⏱️ Registro interativo -->
+<section class="tempo">
+<h2>⏱️ Registro de Estudos</h2>
+
+<label>Matéria:</label>
+<input type="text" placeholder="Ex: Matemática">
+
+<label>Tempo estudado:</label>
+<input type="text" placeholder="Ex: 2h">
+
+<label><input type="checkbox"> Registrar estudo</label>
+<p class="msg">✔ Registro salvo com sucesso!</p>
+
+</section>
+
+<!-- 🎯 Teste vocacional funcional -->
+<section class="teste">
+<h2>🎯 Descubra sua área</h2>
+
+<p>Qual matéria você mais gosta?</p>
+
+<input type="radio" name="area" id="exatas">
+<label for="exatas">Exatas</label><br>
+
+<input type="radio" name="area" id="humanas">
+<label for="humanas">Humanas</label><br>
+
+<input type="radio" name="area" id="bio">
+<label for="bio">Biológicas</label>
+
+<!-- Resultados -->
+<div class="resultado exatas">
+<p>📊 Cursos indicados:</p>
+<p>Engenharia, Ciência da Computação, Matemática</p>
+</div>
+
+<div class="resultado humanas">
+<p>🌎 Cursos indicados:</p>
+<p>Direito, Psicologia, Administração</p>
+</div>
+
+<div class="resultado bio">
+<p>🔬 Cursos indicados:</p>
+<p>Medicina, Enfermagem, Biologia</p>
+</div>
+
+</section>
+
+<!-- 💬 Motivação -->
+<section class="motivacao">
+<h2>💬 Motivação</h2>
+<p>🚀 Bianca, cada tarefa concluída te aproxima da sua aprovação!</p>
+</section>
 
 </main>
 

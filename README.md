@@ -1,12 +1,14 @@
 # 📚 Lista de Tarefas ENEM
 
-Sistema simples de organização de estudos para o ENEM, desenvolvido utilizando apenas HTML e CSS.
+Projeto de organização de estudos desenvolvido com HTML e CSS, com foco em auxiliar estudantes na criação de uma rotina estruturada para o ENEM.
 
 ---
 
 ## 🚀 Sobre o Projeto
 
-Este projeto tem como objetivo ajudar estudantes a organizarem seus estudos de forma visual e prática, permitindo visualizar tarefas, conteúdos e avisos importantes.
+A aplicação simula um sistema de organização de tarefas e planejamento semanal de estudos, permitindo visualizar conteúdos, avisos e uma agenda fixa com horários definidos.
+
+O projeto foi pensado para atender estudantes que precisam melhorar a disciplina e constância nos estudos.
 
 ---
 
@@ -22,16 +24,24 @@ Este projeto tem como objetivo ajudar estudantes a organizarem seus estudos de f
 ---
 
 ## ⚙️ Funcionalidades
+├── index.html
+└── style.css
 
-- 📌 Visualização de tarefas
-- ✔ Marcação de tarefas como concluídas
-- 🎨 Diferenciação por prioridade (cores)
-- 📚 Organização por matérias do ENEM
-- 🔔 Avisos e dicas de estudo
-- 💬 Mensagens motivacionais
+---
+
+- 🔔 Avisos com dicas de estudo
 - 📝 Simulação de adição de tarefas
-- ⏱️ Simulação de registro de estudos
-- 🎯 Teste de área com sugestão de cursos
+- 📚 Organização por áreas do ENEM:
+  - Linguagens
+  - Ciências Humanas
+  - Ciências da Natureza
+  - Matemática
+  - Redação
+- 📅 Agenda semanal com:
+  - Dias da semana
+  - Matérias organizadas
+  - Horários definidos (entre 2h e 3h)
+- 💬 Mensagem motivacional para incentivo
 
 ---
 
@@ -39,17 +49,18 @@ Este projeto tem como objetivo ajudar estudantes a organizarem seus estudos de f
 
 1. Baixe ou clone o repositório
 2. Abra o arquivo `index.html` no navegador
-3. Navegue pelo sistema
+3. Navegue pelas seções do sistema
 
 ---
 
 ## 🎨 Interface
 
-O projeto foi desenvolvido com foco em:
+O projeto apresenta:
 
-- Organização visual
-- Facilidade de uso
-- Interface simples e intuitiva
+- Layout centralizado
+- Design simples e intuitivo
+- Cores para facilitar a visualização
+- Organização clara das informações
 
 ---
 
@@ -59,7 +70,7 @@ Por utilizar apenas HTML e CSS:
 
 - Não é possível adicionar tarefas dinamicamente
 - Não há armazenamento de dados
-- As interações são simuladas
+- As interações são apenas visuais (simulação)
 
 ---
 
@@ -67,13 +78,19 @@ Por utilizar apenas HTML e CSS:
 
 - Implementação com JavaScript
 - Adição real de tarefas
-- Salvamento de dados
-- Sistema de progresso do usuário
+- Registro automático de estudos
+- Sistema de acompanhamento de desempenho
+
+---
+
+## 👩‍💻 Autora
+
+Yasmin Silva Soriano
 
 ---
 
 ## 📌 Observação
 
-Este projeto foi desenvolvido para fins educacionais, simulando funcionalidades de um sistema real dentro das limitações propostas.
+Este projeto foi desenvolvido com fins educacionais, aplicando conceitos de estruturação com HTML e estilização com CSS, simulando funcionalidades de um sistema real.
 
 ---

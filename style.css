@@ -1,29 +1,39 @@
-body {
-    font-family: Arial;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* CONTAINER */
 .container {
     max-width: 450px;
-    margin: auto;
-    background: white;
+    margin: 40px auto;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-/* MENU */
-.menu {
-    display: flex;
-    justify-content: space-around;
-    background: #6c5ce7;
-    padding: 10px;
-    border-radius: 10px;
+/* TÍTULOS */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 /* SEÇÕES */
@@ -31,42 +41,27 @@ section {
     margin-top: 20px;
 }
 
-/* CARDS */
+/* CARDS (AVISOS) */
 .card {
     background: #ffeaa7;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
     border-radius: 8px;
 }
 
-/* LISTA */
-.lista {
-    list-style: none;
-    padding: 0;
-}
-
-.lista li {
+/* FORMULÁRIOS */
+input, select {
+    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px 0 10px;
     border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
-/* PRIORIDADE */
-.alta { background: #ff7675; }
-.media { background: #ffeaa7; }
-.baixa { background: #55efc4; }
-
-/* CHECK */
-input:checked + label {
-    text-decoration: line-through;
-}
-
-/* BLOCOS */
-.bloco {
-    background: #f1f2f6;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 8px;
+/* CHECKBOX */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
 }
 
 /* MENSAGENS */
@@ -80,25 +75,49 @@ input[type="checkbox"]:checked + .msg {
     display: block;
 }
 
-/* RESULTADO TESTE */
-.resultado {
-    display: none;
-    background: #dfe6e9;
+/* BLOCOS DE MATÉRIA */
+.bloco {
+    background: #f1f2f6;
     padding: 10px;
-    margin-top: 10px;
+    margin: 6px 0;
     border-radius: 8px;
 }
 
-/* Mostrar resultado */
-#exatas:checked ~ .exatas {
-    display: block;
+/* CALENDÁRIO */
+.agenda {
+    margin-top: 30px;
 }
 
-#humanas:checked ~ .humanas {
-    display: block;
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-#bio:checked ~ .bio {
-    display: block;
+.dia {
+    background: #81ecec;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
+
+.dia h3 {
+    margin-bottom: 5px;
+}
+
+/* MOTIVAÇÃO */
+.motivacao {
+    background: #dfe6e9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
 }
